@@ -1,6 +1,6 @@
-import Head from 'next/head';
 import React from 'react';
-
+import Head from 'next/head';
+import { NextPage } from 'next';
 import App from './_app';
 
 /**
@@ -12,12 +12,12 @@ import App from './_app';
  * @license MIT
  * @version 1.0.0
  */
-const Home = () => {
+const Home: NextPage = (): JSX.Element => {
   return (
     <div className='flex'>
       <Head>
-        <title>Template By Ntavigwa</title>
-        <meta name='description' content='Template By Ntavigwa Bashombe' />
+        <title>UMEME</title>
+        <meta name='description' content='Umeme' />
       </Head>
       <App />
     </div>
