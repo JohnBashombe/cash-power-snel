@@ -22,9 +22,9 @@ const Bulb = ({ className }: IBulb): JSX.Element => {
           y1='672.61'
           x1='-36.158'
         >
-          <stop id='stop4262' stop-color='#e3dbdb' offset='0' />
-          <stop id='stop4268' stop-color='#c8b7b7' offset='.49241' />
-          <stop id='stop4264' stop-color='#e3dedb' offset='1' />
+          <stop id='stop4262' stopColor='#e3dbdb' offset='0' />
+          <stop id='stop4268' stopColor='#c8b7b7' offset='.49241' />
+          <stop id='stop4264' stopColor='#e3dedb' offset='1' />
         </linearGradient>
         <radialGradient
           id='radialGradient4892'
@@ -34,8 +34,8 @@ const Bulb = ({ className }: IBulb): JSX.Element => {
           gradientTransform='matrix(.33086 1.2146 -1.1751 .32011 650.84 401.34)'
           r='67.42'
         >
-          <stop id='stop4254' stop-color='#fff6d5' offset='0' />
-          <stop id='stop4256' stop-color='#fd5' offset='1' />
+          <stop id='stop4254' stopColor='#fff6d5' offset='0' />
+          <stop id='stop4256' stopColor='#fd5' offset='1' />
         </radialGradient>
         <radialGradient
           id='radialGradient4894'
@@ -45,19 +45,14 @@ const Bulb = ({ className }: IBulb): JSX.Element => {
           gradientTransform='matrix(.163 1.9542 -1.7989 .15005 1154 575.11)'
           r='39.344'
         >
-          <stop
-            id='stop4276'
-            stop-color='#e3dbdb'
-            stop-opacity='0'
-            offset='0'
-          />
+          <stop id='stop4276' stopColor='#e3dbdb' stop-opacity='0' offset='0' />
           <stop
             id='stop4282'
-            stop-color='#d7cecb'
-            stop-opacity='.43922'
+            stopColor='#d7cecb'
+            stopOpacity='.43922'
             offset='.80281'
           />
-          <stop id='stop4280' stop-color='#c8b7b7' offset='1' />
+          <stop id='stop4280' stopColor='#c8b7b7' offset='1' />
         </radialGradient>
       </defs>
       <g id='layer1' transform='translate(-535.16 -291.12)'>
