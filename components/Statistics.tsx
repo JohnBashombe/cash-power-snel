@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/restrict-template-expressions */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import React from 'react';
 import {
   KwhTaxCDF,
@@ -23,11 +26,11 @@ const Statistics = (): JSX.Element => {
           subTitle='Price Per KWH'
         />
         <PriceStats
-          title={`CDF ${(KwhTaxCDF as number).toFixed(2)}`}
+          title={`CDF ${KwhTaxCDF.toFixed(2)}`}
           subTitle='Tax Per KWH'
         />
         <PriceStats
-          title={`USD ${(KwhTaxUSD as number).toFixed(2)}`}
+          title={`USD ${KwhTaxUSD.toFixed(2)}`}
           subTitle='Tax Per KWH'
         />
       </div>

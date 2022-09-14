@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/restrict-plus-operands */
 import React, { useEffect, useState } from 'react';
 import PaymentMethods from './PaymentMethods';
 import { Payments } from '../lib/data/networks';
@@ -30,9 +31,9 @@ const OrderPage = (): JSX.Element => {
 
     setAmount(value);
     if (monetary === 'cdf') {
-      setKwh(value / (KwhPriceCDF + (KwhTaxCDF as number)));
+      setKwh(value / (KwhPriceCDF + KwhTaxCDF));
     } else if (monetary === 'usd') {
-      setKwh(value / (KwhPriceUSD + (KwhTaxUSD as number)));
+      setKwh(value / (KwhPriceUSD + KwhTaxUSD));
     }
   };
 
