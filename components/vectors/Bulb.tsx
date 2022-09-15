@@ -45,7 +45,7 @@ const Bulb = ({ className }: IBulb): JSX.Element => {
           gradientTransform='matrix(.163 1.9542 -1.7989 .15005 1154 575.11)'
           r='39.344'
         >
-          <stop id='stop4276' stopColor='#e3dbdb' stop-opacity='0' offset='0' />
+          <stop id='stop4276' stopColor='#e3dbdb' stopOpacity='0' offset='0' />
           <stop
             id='stop4282'
             stopColor='#d7cecb'

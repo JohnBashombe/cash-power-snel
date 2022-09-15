@@ -16,7 +16,7 @@ const Statistics = (): JSX.Element => {
       <p className='font-bold text-primary text-2xl md:text-3xl'>
         Info & Statistics
       </p>
-      <div className='w-full grid grid-cols-1 gap-16 md:grid-cols-2 bg-white rounded-xl py-24 relative'>
+      <div className='w-full grid grid-cols-1 gap-10 md:grid-cols-2 rounded-xl relative'>
         <PriceStats
           title={`CDF ${KwhPriceCDF.toFixed(2)}`}
           subTitle='Price Per KWH'
@@ -33,6 +33,8 @@ const Statistics = (): JSX.Element => {
           title={`USD ${KwhTaxUSD.toFixed(2)}`}
           subTitle='Tax Per KWH'
         />
+        <PriceStats title={`15,761 KWH`} subTitle='Total KWH Sold' />
+        <PriceStats title={`7.09 KWH`} subTitle='Average KWH per House' />
       </div>
     </div>
   );

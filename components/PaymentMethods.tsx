@@ -8,13 +8,13 @@ type IPayment = {
 
 const PaymentMethods = ({ selected, setSelected }: IPayment): JSX.Element => {
   return (
-    <div className='grid grid-cols-2 md:grid-cols-4 gap-5 w-full h-full'>
+    <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 w-full h-full'>
       {Payments.map((value, index) => (
         <div
           key={index}
           onClick={() => setSelected(value.title)}
           className={
-            `flex justify-center items-center px-4 py-2 rounded-xl cursor-pointer ` +
+            `flex justify-center shadow items-center px-4 py-5 md:py-4 lg:py-2 rounded-xl cursor-pointer ` +
             (selected === value.title
               ? 'bg-secondary hover:bg-secondary/80 '
               : 'bg-back hover:bg-back/80')
