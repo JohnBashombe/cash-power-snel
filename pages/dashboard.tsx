@@ -8,7 +8,7 @@ const Dashboard = (): JSX.Element => {
     <div className='flex w-full h-full'>
       <div className='flex-col h-full w-full'>
         <DashboardTab />
-        <div className='flex flex-col w-full xl:flex-row justify-start items-start space-y-5 xl:space-y-0 xl:space-x-8'>
+        <div className='flex flex-col w-full xl:flex-row justify-start items-start mb-10 space-y-5 xl:space-y-0 xl:space-x-8'>
           <OrderPage />
           <Statistics />
         </div>

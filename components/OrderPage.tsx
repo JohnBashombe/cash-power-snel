@@ -54,13 +54,13 @@ const OrderPage = (): JSX.Element => {
         Pay Your Bill
       </p>
       <form onSubmit={onSubmit} className='w-full'>
-        <div className='flex flex-col bg-white h-full rounded-xl p-4 md:p-8 space-y-6'>
+        <div className='flex flex-col bg-white h-full rounded-xl shadow p-4 md:p-8 space-y-6'>
           <div className='flex flex-col space-y-2'>
             <p className='text-texture text-sm font-light'>Meter Number</p>
             <input
               placeholder='Your Meter Number'
               type='text'
-              className='bg-back text-xs w-full py-5 px-6 placeholder:text-texture focus:outline-none rounded-xl'
+              className='bg-back shadow text-xs w-full py-5 px-6 placeholder:text-texture focus:outline-none rounded-xl'
             />
           </div>
           <div className='flex flex-col md:flex-row justify-start space-y-4 md:space-y-0 md:space-x-4 items-center w-full h-full'>
@@ -75,7 +75,7 @@ const OrderPage = (): JSX.Element => {
                   )
                 }
                 placeholder='Your Amount To Pay'
-                className='bg-back text-xs w-full py-5 px-6 placeholder:text-texture focus:outline-none rounded-xl'
+                className='bg-back shadow text-xs w-full py-5 px-6 placeholder:text-texture focus:outline-none rounded-xl'
               />
               <CurrencySelector currency={currency} setCurrency={setCurrency} />
             </div>
@@ -97,12 +97,12 @@ const OrderPage = (): JSX.Element => {
             <input
               placeholder={`Your ${selected} Phone Number`}
               type='text'
-              className='bg-back text-xs w-full py-5 px-6 placeholder:text-texture focus:outline-none rounded-xl'
+              className='bg-back shadow text-xs w-full py-5 px-6 placeholder:text-texture focus:outline-none rounded-xl'
             />
           </div>
           <button
             type={loading ? 'button' : 'submit'}
-            className='flex py-5 bg-secondary text-white rounded-xl justify-center items-center w-full text-base font-bold'
+            className='flex shadow py-5 bg-secondary text-white rounded-xl justify-center items-center w-full text-base font-bold'
           >
             {loading ? (
               <AiOutlineLoading className='text-2xl animate-spin' />

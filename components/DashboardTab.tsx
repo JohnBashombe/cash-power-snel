@@ -4,13 +4,13 @@ import { Tabs } from '../lib/data/tabs';
 const DashboardTab = (): JSX.Element => {
   const [selected, setSelected] = useState<string>(Tabs[0].title);
   return (
-    <div className='flex flex-row overflow-x-auto justify-start items-center w-full h-full no-scrollbars space-x-4'>
+    <div className='flex flex-row overflow-x-auto justify-start items-center w-full h-full no-scrollbars space-x-4 py-2'>
       {Tabs.map((value, index) => (
         <div
           key={index}
           onClick={() => setSelected(value.title)}
           className={
-            ` pl-3 pr-8 cursor-pointer w-fit min-w-fit h-full rounded-xl py-2 text-sm flex justify-start font-medium items-center space-x-2 md:space-x-4 ` +
+            ` pl-3 pr-8 cursor-pointer shadow w-fit min-w-fit h-full rounded-xl py-2 text-sm flex justify-start font-medium items-center space-x-2 md:space-x-4 ` +
             (selected === value.title
               ? 'bg-secondary hover:bg-secondary/90 text-white'
               : 'bg-white text-primary')

@@ -20,7 +20,7 @@ const SideBar = (): JSX.Element => {
               className={
                 `w-full flex justify-start items-center space-x-2 py-5 px-8 rounded-xl cursor-pointer hover:bg-back ` +
                 (selected === value.title
-                  ? 'bg-back text-secondary font-bold'
+                  ? 'bg-back text-secondary font-bold shadow'
                   : 'text-texture')
               }
             >
@@ -38,7 +38,7 @@ const SideBar = (): JSX.Element => {
             className={
               `w-full flex justify-start items-center space-x-2 py-5 px-8 rounded-xl cursor-pointer hover:bg-back ` +
               (selected === value.title
-                ? 'bg-back text-secondary font-bold'
+                ? 'bg-back text-secondary font-bold shadow'
                 : 'text-texture')
             }
           >

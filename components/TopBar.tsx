@@ -10,7 +10,7 @@ const TopBar = (): JSX.Element => {
         <input
           placeholder='Search by Name, Email or Phone'
           type='text'
-          className='w-full text-xs md:text-sm py-5 pl-14 md:pl-16 pr-40 placeholder:text-texture focus:outline-none rounded-xl'
+          className='w-full shadow text-xs md:text-sm py-5 pl-14 md:pl-16 pr-40 placeholder:text-texture focus:outline-none rounded-xl'
         />
         <div className='flex flex-row justify-center items-center text-xs md:text-sm space-x-2 px-4 absolute py-4 bg-back right-[2px] rounded-xl cursor-pointer'>
           <p>Everything</p>
